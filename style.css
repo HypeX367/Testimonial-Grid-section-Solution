@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Barlow Semi Condensed',sans-serif;
+	line-height: 1.7;
+	font-size: 15px;
+	background: #ECF2F7;
+}
+.testimonials{
+	max-width: 1440px;
+	margin: 100px auto;
+	padding: 30px;
+	display: grid;
+	grid-template-areas:
+	'a a a b c'
+	'd e e e c';
+	grid-gap: 30px;
+}
+
+.testimonials div{
+	border-radius: 10px;
+}
+
+.card_daniel {
+	background: hsl(263, 55%, 52%);
+	padding: 30px;
+	background-image: url('bg-pattern-quotation.svg');
+	background-repeat: no-repeat;
+	color: white;
+	background-position: top 0px right 20px;
+	grid-area: a;
+}
+
+.card_jonathan {
+	background: hsl(217, 19%, 35%);
+	padding: 30px;
+	color: hsl(0, 0%, 81%);
+	grid-area: b;
+}
+
+.card_patrick {
+	background: hsl(219, 29%, 14%);
+	padding: 30px;
+	color: hsl(0, 0%, 81%);
+	grid-area: e;
+}
+
+.card_kira{
+	padding: 30px;
+	background: white;
+	grid-area: c;
+}
+
+.card_jeannete{
+	padding: 30px;
+	background: white;
+	grid-area: d;
+}
+
+
+.card_daniel,
+.card_patrick img{
+	border: 2px solid hsl(263, 55%, 52%);
+}
+
+img {
+	border-radius: 50%;
+	margin-right:20px;
+}
+
+.card__header div{
+	opacity: 50%;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+h3{
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.card__header {
+	display: flex;
+	padding-left: 5px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.card__lead{
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+ .card__quote {
+ 	opacity: 70%;
+ }
+
+
+ @media (max-width: 700px) {
+ 	.testimonials {
+ 		display: flex;
+ 		flex-direction: column;
+ 	}
+ }
